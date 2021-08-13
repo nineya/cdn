@@ -28,7 +28,7 @@ function Btoc(tocList, contentElement, tocElement, scrollSpeed, headingsOffset){
             if(tocList.indexOf(elem.tagName) != -1){
                 childs.push(elem);
             }
-            childs.concat(getChild(elem, tocList));
+            childs.push.apply(childs, getChild(elem, tocList));
         }
         return childs;
     }
