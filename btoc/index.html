@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>示例</title>
+</head>
+<body>
+<div id="toc">
+</div>
+<div id="content">
+<h1>大标题1</h1>
+<p>正文</p>
+<h2>中标题1</h2>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+<h2>中标题2</h2>
+<h3>小标题1</h3>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+<h3>小标题2</h3>
+<h3>小标题3</h3>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+<h1>大标题2</h1>
+<h1>大标题3</h1>
+<p>正文</p>
+<p>正文</p>
+<h2>中标题1</h2>
+<h3>小标题1</h3>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+<h2>中标题2</h2>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+<h1>大标题4</h1>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+<h1>大标题5</h1>
+<p>正文</p>
+<p>正文</p>
+<h3>小标题1</h3>
+<p>正文</p>
+<p>正文</p>
+<p>正文</p>
+</div>
+<script src="js/btoc.js"></script>
+<script>
+Btoc.init({
+    tocList: ['h1','h2','h3','h4','h5'],
+	contentElement: document.getElementById("content"),
+	tocElement: document.getElementById("toc"),
+	// 滚动后距离顶部的高度
+	headingsOffset: 50,
+	// 滚动的时间
+	scrollSpeed: 20
+});
+</script>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>示例</title>
+<link rel="stylesheet" href="css/sakura.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="js/snowfall.jquery.js"></script>
+<script>
+/**
+flakeCount|number 雪花数量
+flakeColor|#RGB 雪花颜色
+flakeIndex|??? 不清楚
+minSize|number 雪花最小体积
+maxSize|number 雪花最大体积
+minSpeed|number 雪花最小速度
+maxSpeed|number 雪花最大速度
+round|boolean true雪花圆形|false方形
+shadow|boolean true雪花有阴影|false无阴影
+image|url 雪花图片
+*/
+$(document).snowfall({image:"img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:25,});
+$(document).snowfall({image:"img/2.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:25,});
+$(document).snowfall({image:"img/3.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:25,});
+$(document).snowfall({image:"img/4.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:25,});
+</script>
+</html>
